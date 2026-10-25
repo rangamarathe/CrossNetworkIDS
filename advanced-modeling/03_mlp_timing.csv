@@ -1,3 +1,0 @@
-split,model,training_rows,iterations,fit_seconds,predict_seconds
-random,"MLP (128, 64)",288997,29,21.05491491709836,0.1682123749051243
-time-ordered,"MLP (128, 64)",288996,14,10.29095554095693,0.1676844998728484

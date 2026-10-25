@@ -1,0 +1,6 @@
+Data/
+.DS_Store
+**/.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+/advanced-modeling/
