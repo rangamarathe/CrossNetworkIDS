@@ -70,7 +70,7 @@ Standalone CSE-CIC-IDS2018 analysis containing:
 - PCA; and
 - programmatically generated findings.
 
-For a step-by-step explanation of the EDA, see [`docs/README_EDA.md`](docs/README_EDA.md).
+For a step-by-step explanation of the EDA, see [`docs/analysis/README_EDA.md`](docs/analysis/README_EDA.md).
 
 ## Key EDA findings
 
@@ -135,14 +135,15 @@ Required packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, a
 | `baseline/02_logistic_baseline_per_class.csv` | Untuned per-class metrics |
 | `baseline/02_logistic_cross_year_detection.csv` | Baseline cross-year alarm and detection rates |
 
-Supporting documentation includes [`docs/PROJECT_BUSINESS_GOAL.md`](docs/PROJECT_BUSINESS_GOAL.md), [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md), and [`docs/ATTACK_LABELS.md`](docs/ATTACK_LABELS.md).
+Supporting documentation includes the [`project business goal`](docs/business/PROJECT_BUSINESS_GOAL.md), [`data dictionary`](docs/analysis/DATA_DICTIONARY.md), and [`attack-label reference`](docs/analysis/ATTACK_LABELS.md).
 
 ## Repository structure
 
 | Directory | Contents |
 |---|---|
 | `EDA/` | Core, advanced-question, and extended 2018 EDA notebooks |
-| `docs/` | EDA guide, business goals, data dictionary, and attack-label documentation |
+| `docs/analysis/` | EDA guide, data dictionary, and attack-label documentation |
+| `docs/business/` | Business goals, research objectives, metrics, and success criteria |
 | `Data/` | Downloaded datasets, generated caches, and local samples; large raw files are not committed |
 | `baseline/` | Logistic Regression baseline notebook and generated baseline metrics |
 | `advanced-modeling/` | Model tuning, nonlinear-model, cross-dataset, and deployment work |

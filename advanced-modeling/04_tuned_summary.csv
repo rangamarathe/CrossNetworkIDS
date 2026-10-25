@@ -1,0 +1,2 @@
+split,model,selected_candidate,macro_precision,macro_recall,macro_f1,weighted_f1,attack_macro_f1,fit_seconds,predict_seconds,learning_rate,max_iter,max_leaf_nodes,max_depth,min_samples_leaf,l2_regularization
+time-ordered,HistGB tuned,4,0.9330283812841341,0.9130481439354677,0.9199258875548187,0.9904054309439366,0.9147118819770222,226.94633783283643,13.23785987496376,0.05,250,63,,20,0.1

@@ -1,0 +1,9 @@
+training strategy,test dataset,true_benign_pred_benign,true_benign_pred_attack,true_attack_pred_benign,true_attack_pred_attack
+2017 only,2017 test,285088,1832,704,79709
+2017 only,2018 test,36217,1878,16214,12865
+2018 only,2017 test,260564,26356,25477,54936
+2018 only,2018 test,37575,520,463,28616
+Mixed equal budget,2017 test,278050,8870,1086,79327
+Mixed equal budget,2018 test,36535,1560,647,28432
+Mixed expanded budget,2017 test,278327,8593,1045,79368
+Mixed expanded budget,2018 test,36593,1502,651,28428

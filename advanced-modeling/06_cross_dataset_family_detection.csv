@@ -1,0 +1,133 @@
+training strategy,test dataset,evaluation group,alarm_rate,support
+2017 only,2017 test,Attempted (scored as benign),0.0805921052631579,1824
+2017 only,2017 test,BENIGN,0.005910289867272778,285096
+2017 only,2017 test,Botnet,0.0,148
+2017 only,2017 test,DDoS,1.0,19029
+2017 only,2017 test,DoS GoldenEye,0.9392338177014531,1514
+2017 only,2017 test,DoS Hulk,0.9991481037420332,31694
+2017 only,2017 test,DoS Slowhttptest,0.6379310344827587,348
+2017 only,2017 test,DoS Slowloris,0.9689119170984456,772
+2017 only,2017 test,FTP-Patator,1.0,795
+2017 only,2017 test,Heartbleed,0.0,3
+2017 only,2017 test,Infiltration,1.0,8
+2017 only,2017 test,Infiltration - Portscan,0.9782697270134456,7363
+2017 only,2017 test,Portscan,0.9948135069521077,18124
+2017 only,2017 test,SSH-Patator,0.9865092748735245,593
+2017 only,2017 test,Web Attack - Brute Force,0.0,15
+2017 only,2017 test,Web Attack - SQL Injection,0.0,3
+2017 only,2017 test,Web Attack - XSS,0.0,4
+2018 only,2017 test,Attempted (scored as benign),0.23958333333333334,1824
+2018 only,2017 test,BENIGN,0.09091323624323035,285096
+2018 only,2017 test,Botnet,0.6216216216216216,148
+2018 only,2017 test,DDoS,0.799884386988281,19029
+2018 only,2017 test,DoS GoldenEye,0.9359313077939234,1514
+2018 only,2017 test,DoS Hulk,0.33495298794724554,31694
+2018 only,2017 test,DoS Slowhttptest,1.0,348
+2018 only,2017 test,DoS Slowloris,1.0,772
+2018 only,2017 test,FTP-Patator,0.9974842767295597,795
+2018 only,2017 test,Heartbleed,0.0,3
+2018 only,2017 test,Infiltration,0.0,8
+2018 only,2017 test,Infiltration - Portscan,0.9669971479016705,7363
+2018 only,2017 test,Portscan,0.9904546457735599,18124
+2018 only,2017 test,SSH-Patator,0.984822934232715,593
+2018 only,2017 test,Web Attack - Brute Force,1.0,15
+2018 only,2017 test,Web Attack - SQL Injection,1.0,3
+2018 only,2017 test,Web Attack - XSS,1.0,4
+Mixed equal budget,2017 test,Attempted (scored as benign),0.15296052631578946,1824
+Mixed equal budget,2017 test,BENIGN,0.030133709347026968,285096
+Mixed equal budget,2017 test,Botnet,0.0,148
+Mixed equal budget,2017 test,DDoS,0.996426506910505,19029
+Mixed equal budget,2017 test,DoS GoldenEye,0.9815059445178336,1514
+Mixed equal budget,2017 test,DoS Hulk,0.9878210386824005,31694
+Mixed equal budget,2017 test,DoS Slowhttptest,0.9712643678160919,348
+Mixed equal budget,2017 test,DoS Slowloris,0.9766839378238342,772
+Mixed equal budget,2017 test,FTP-Patator,0.8528301886792453,795
+Mixed equal budget,2017 test,Heartbleed,0.0,3
+Mixed equal budget,2017 test,Infiltration,0.0,8
+Mixed equal budget,2017 test,Infiltration - Portscan,0.9721580877359772,7363
+Mixed equal budget,2017 test,Portscan,0.9958618406532774,18124
+Mixed equal budget,2017 test,SSH-Patator,0.9713322091062394,593
+Mixed equal budget,2017 test,Web Attack - Brute Force,0.8,15
+Mixed equal budget,2017 test,Web Attack - SQL Injection,1.0,3
+Mixed equal budget,2017 test,Web Attack - XSS,1.0,4
+Mixed expanded budget,2017 test,Attempted (scored as benign),0.15296052631578946,1824
+Mixed expanded budget,2017 test,BENIGN,0.029162106799113283,285096
+Mixed expanded budget,2017 test,Botnet,0.0,148
+Mixed expanded budget,2017 test,DDoS,0.9965316096484313,19029
+Mixed expanded budget,2017 test,DoS GoldenEye,0.9801849405548216,1514
+Mixed expanded budget,2017 test,DoS Hulk,0.9890515554994637,31694
+Mixed expanded budget,2017 test,DoS Slowhttptest,0.882183908045977,348
+Mixed expanded budget,2017 test,DoS Slowloris,0.9766839378238342,772
+Mixed expanded budget,2017 test,FTP-Patator,0.8955974842767296,795
+Mixed expanded budget,2017 test,Heartbleed,0.0,3
+Mixed expanded budget,2017 test,Infiltration,0.0,8
+Mixed expanded budget,2017 test,Infiltration - Portscan,0.973108787179139,7363
+Mixed expanded budget,2017 test,Portscan,0.9953100860737144,18124
+Mixed expanded budget,2017 test,SSH-Patator,0.96964586846543,593
+Mixed expanded budget,2017 test,Web Attack - Brute Force,1.0,15
+Mixed expanded budget,2017 test,Web Attack - SQL Injection,1.0,3
+Mixed expanded budget,2017 test,Web Attack - XSS,1.0,4
+2017 only,2018 test,Attempted (scored as benign),0.6091405184174625,1466
+2017 only,2018 test,BENIGN,0.026891261022686942,36629
+2017 only,2018 test,Botnet,0.00175,4000
+2017 only,2018 test,DDoS,1.0,4000
+2017 only,2018 test,DDoS-HOIC,0.0,4000
+2017 only,2018 test,DDoS-LOIC-UDP,0.0,506
+2017 only,2018 test,DoS GoldenEye,0.58675,4000
+2017 only,2018 test,DoS Hulk,0.01475,4000
+2017 only,2018 test,DoS Slowloris,0.9705535924617197,1698
+2017 only,2018 test,Infiltration,0.0,41
+2017 only,2018 test,Infiltration - Dropbox Download,0.0,17
+2017 only,2018 test,Infiltration - Portscan,0.7390358825661472,2759
+2017 only,2018 test,SSH-Patator,0.69125,4000
+2017 only,2018 test,Web Attack - Brute Force,0.0,27
+2017 only,2018 test,Web Attack - SQL Injection,0.0,8
+2017 only,2018 test,Web Attack - XSS,0.0,23
+2018 only,2018 test,Attempted (scored as benign),0.10300136425648022,1466
+2018 only,2018 test,BENIGN,0.010073985093778154,36629
+2018 only,2018 test,Botnet,1.0,4000
+2018 only,2018 test,DDoS,1.0,4000
+2018 only,2018 test,DDoS-HOIC,0.9905,4000
+2018 only,2018 test,DDoS-LOIC-UDP,0.9822134387351779,506
+2018 only,2018 test,DoS GoldenEye,0.98925,4000
+2018 only,2018 test,DoS Hulk,1.0,4000
+2018 only,2018 test,DoS Slowloris,1.0,1698
+2018 only,2018 test,Infiltration,0.24390243902439024,41
+2018 only,2018 test,Infiltration - Dropbox Download,0.0,17
+2018 only,2018 test,Infiltration - Portscan,0.8923523015585357,2759
+2018 only,2018 test,SSH-Patator,1.0,4000
+2018 only,2018 test,Web Attack - Brute Force,0.0,27
+2018 only,2018 test,Web Attack - SQL Injection,0.875,8
+2018 only,2018 test,Web Attack - XSS,1.0,23
+Mixed equal budget,2018 test,Attempted (scored as benign),0.40313778990450205,1466
+Mixed equal budget,2018 test,BENIGN,0.026454448660897103,36629
+Mixed equal budget,2018 test,Botnet,0.9985,4000
+Mixed equal budget,2018 test,DDoS,1.0,4000
+Mixed equal budget,2018 test,DDoS-HOIC,0.99075,4000
+Mixed equal budget,2018 test,DDoS-LOIC-UDP,0.9782608695652174,506
+Mixed equal budget,2018 test,DoS GoldenEye,0.97525,4000
+Mixed equal budget,2018 test,DoS Hulk,0.9825,4000
+Mixed equal budget,2018 test,DoS Slowloris,0.9893992932862191,1698
+Mixed equal budget,2018 test,Infiltration,0.024390243902439025,41
+Mixed equal budget,2018 test,Infiltration - Dropbox Download,0.0,17
+Mixed equal budget,2018 test,Infiltration - Portscan,0.8916274012323305,2759
+Mixed equal budget,2018 test,SSH-Patator,1.0,4000
+Mixed equal budget,2018 test,Web Attack - Brute Force,0.0,27
+Mixed equal budget,2018 test,Web Attack - SQL Injection,1.0,8
+Mixed equal budget,2018 test,Web Attack - XSS,0.0,23
+Mixed expanded budget,2018 test,Attempted (scored as benign),0.39631650750341063,1466
+Mixed expanded budget,2018 test,BENIGN,0.025144011575527588,36629
+Mixed expanded budget,2018 test,Botnet,0.999,4000
+Mixed expanded budget,2018 test,DDoS,1.0,4000
+Mixed expanded budget,2018 test,DDoS-HOIC,0.99075,4000
+Mixed expanded budget,2018 test,DDoS-LOIC-UDP,0.9782608695652174,506
+Mixed expanded budget,2018 test,DoS GoldenEye,0.97575,4000
+Mixed expanded budget,2018 test,DoS Hulk,0.98375,4000
+Mixed expanded budget,2018 test,DoS Slowloris,0.9882214369846879,1698
+Mixed expanded budget,2018 test,Infiltration,0.024390243902439025,41
+Mixed expanded budget,2018 test,Infiltration - Dropbox Download,0.0,17
+Mixed expanded budget,2018 test,Infiltration - Portscan,0.8876404494382022,2759
+Mixed expanded budget,2018 test,SSH-Patator,1.0,4000
+Mixed expanded budget,2018 test,Web Attack - Brute Force,0.0,27
+Mixed expanded budget,2018 test,Web Attack - SQL Injection,1.0,8
+Mixed expanded budget,2018 test,Web Attack - XSS,0.0,23
