@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document explains the core analysis in [`01_eda.ipynb`](01_eda.ipynb), the hypothesis-driven Q1–Q6 analysis in [`01_eda_advanced_questions.ipynb`](01_eda_advanced_questions.ipynb), and the detailed 2018 analysis in [`01_eda_2018_extended.ipynb`](01_eda_2018_extended.ipynb), including why each step is performed and how it supports the network-intrusion-detection business case.
+This document explains the core analysis in [`EDA/01_eda.ipynb`](../EDA/01_eda.ipynb), the hypothesis-driven Q1–Q6 analysis in [`EDA/01_eda_advanced_questions.ipynb`](../EDA/01_eda_advanced_questions.ipynb), and the detailed 2018 analysis in [`EDA/01_eda_2018_extended.ipynb`](../EDA/01_eda_2018_extended.ipynb), including why each step is performed and how it supports the network-intrusion-detection business case.
 
 The project asks:
 
@@ -452,14 +452,14 @@ Environment shortcuts and strong cross-year drift show that good CICIDS2017 scor
 
 The EDA and baseline notebooks should be run in this order:
 
-1. `01_eda.ipynb` — complete the core, grading-aligned EDA and initial 2018 inventory.
-2. `01_eda_advanced_questions.ipynb` — investigate label ambiguity, separability, redundancy, shortcuts, leakage, and cross-year drift.
-3. `01_eda_2018_extended.ipynb` — perform the detailed CSE-CIC-IDS2018 audit and EDA.
+1. `EDA/01_eda.ipynb` — complete the core, grading-aligned EDA and initial 2018 inventory.
+2. `EDA/01_eda_advanced_questions.ipynb` — investigate label ambiguity, separability, redundancy, shortcuts, leakage, and cross-year drift.
+3. `EDA/01_eda_2018_extended.ipynb` — perform the detailed CSE-CIC-IDS2018 audit and EDA.
 4. `02_logistic_regression_baseline.ipynb` — establish an interpretable minimum benchmark and cross-year check.
 5. `02_logistic_regression_tuning.ipynb` — test whether leakage-safe regularization and weighting choices improve the baseline.
 
 ## Reproduction
 
-Run the notebook from the project root so relative data and cache paths resolve correctly. Required Python packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, and `scikit-learn`.
+Start Jupyter from the project root and open the notebooks under `EDA/` so relative data and cache paths resolve correctly. Required Python packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, and `scikit-learn`.
 
 The notebook reads raw CSV files without modifying them. Generated caches contain label counts and the stratified 2018 sample, allowing later runs to avoid rescanning the full 2018 dataset.

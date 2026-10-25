@@ -27,7 +27,7 @@ Both datasets use the same 91-column schema. CICIDS2017 is analyzed in memory. T
 
 ## EDA notebooks
 
-### [`01_eda.ipynb`](01_eda.ipynb)
+### [`EDA/01_eda.ipynb`](EDA/01_eda.ipynb)
 
 Core, grading-aligned exploratory analysis:
 
@@ -45,7 +45,7 @@ Core, grading-aligned exploratory analysis:
 
 Each applicable section includes why the analysis is performed, its business relevance, and a results-based takeaway.
 
-### [`01_eda_advanced_questions.ipynb`](01_eda_advanced_questions.ipynb)
+### [`EDA/01_eda_advanced_questions.ipynb`](EDA/01_eda_advanced_questions.ipynb)
 
 Hypothesis-driven analyses separated from the initial EDA:
 
@@ -56,7 +56,7 @@ Hypothesis-driven analyses separated from the initial EDA:
 - Q5: near-duplicate split leakage; and
 - Q6: cross-year distribution drift.
 
-### [`01_eda_2018_extended.ipynb`](01_eda_2018_extended.ipynb)
+### [`EDA/01_eda_2018_extended.ipynb`](EDA/01_eda_2018_extended.ipynb)
 
 Standalone CSE-CIC-IDS2018 analysis containing:
 
@@ -70,7 +70,7 @@ Standalone CSE-CIC-IDS2018 analysis containing:
 - PCA; and
 - programmatically generated findings.
 
-For a step-by-step explanation of the EDA, see [`README_EDA.md`](README_EDA.md).
+For a step-by-step explanation of the EDA, see [`docs/README_EDA.md`](docs/README_EDA.md).
 
 ## Key EDA findings
 
@@ -120,9 +120,9 @@ Chronological results are emphasized over random-split results because scheduled
 Run the notebooks from the project root in this order:
 
 1. `00_download_data.ipynb` — required data download and setup
-2. `01_eda.ipynb`
-3. `01_eda_advanced_questions.ipynb`
-4. `01_eda_2018_extended.ipynb`
+2. `EDA/01_eda.ipynb`
+3. `EDA/01_eda_advanced_questions.ipynb`
+4. `EDA/01_eda_2018_extended.ipynb`
 5. `02_logistic_regression_baseline.ipynb`
 
 Required packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, and `scikit-learn`.
@@ -135,7 +135,18 @@ Required packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, a
 | `02_logistic_baseline_per_class.csv` | Untuned per-class metrics |
 | `02_logistic_cross_year_detection.csv` | Baseline cross-year alarm and detection rates |
 
-Supporting documentation includes [`PROJECT_BUSINESS_GOAL.md`](PROJECT_BUSINESS_GOAL.md), [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md), and [`ATTACK_LABELS.md`](ATTACK_LABELS.md).
+Supporting documentation includes [`docs/PROJECT_BUSINESS_GOAL.md`](docs/PROJECT_BUSINESS_GOAL.md), [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md), and [`docs/ATTACK_LABELS.md`](docs/ATTACK_LABELS.md).
+
+## Repository structure
+
+| Directory | Contents |
+|---|---|
+| `EDA/` | Core, advanced-question, and extended 2018 EDA notebooks |
+| `docs/` | EDA guide, business goals, data dictionary, and attack-label documentation |
+| `Data/` | Downloaded datasets, generated caches, and local samples; large raw files are not committed |
+| `phase2/` | Model tuning, nonlinear-model, cross-dataset, and deployment work |
+
+Start Jupyter from the repository root so the notebooks under `EDA/` continue to resolve their shared `Data/` paths correctly.
 
 ## Phase 2 (TODO)
 
