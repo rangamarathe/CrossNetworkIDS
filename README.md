@@ -85,7 +85,7 @@ For a step-by-step explanation of the EDA, see [`docs/README_EDA.md`](docs/READM
 
 ## Baseline notebooks
 
-### [`02_logistic_regression_baseline.ipynb`](02_logistic_regression_baseline.ipynb)
+### [`baseline/02_logistic_regression_baseline.ipynb`](baseline/02_logistic_regression_baseline.ipynb)
 
 The fixed reference model uses:
 
@@ -123,7 +123,7 @@ Run the notebooks from the project root in this order:
 2. `EDA/01_eda.ipynb`
 3. `EDA/01_eda_advanced_questions.ipynb`
 4. `EDA/01_eda_2018_extended.ipynb`
-5. `02_logistic_regression_baseline.ipynb`
+5. `baseline/02_logistic_regression_baseline.ipynb`
 
 Required packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, and `scikit-learn`.
 
@@ -131,9 +131,9 @@ Required packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, a
 
 | File | Purpose |
 |---|---|
-| `02_logistic_baseline_summary.csv` | Untuned baseline summary |
-| `02_logistic_baseline_per_class.csv` | Untuned per-class metrics |
-| `02_logistic_cross_year_detection.csv` | Baseline cross-year alarm and detection rates |
+| `baseline/02_logistic_baseline_summary.csv` | Untuned baseline summary |
+| `baseline/02_logistic_baseline_per_class.csv` | Untuned per-class metrics |
+| `baseline/02_logistic_cross_year_detection.csv` | Baseline cross-year alarm and detection rates |
 
 Supporting documentation includes [`docs/PROJECT_BUSINESS_GOAL.md`](docs/PROJECT_BUSINESS_GOAL.md), [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md), and [`docs/ATTACK_LABELS.md`](docs/ATTACK_LABELS.md).
 
@@ -144,10 +144,11 @@ Supporting documentation includes [`docs/PROJECT_BUSINESS_GOAL.md`](docs/PROJECT
 | `EDA/` | Core, advanced-question, and extended 2018 EDA notebooks |
 | `docs/` | EDA guide, business goals, data dictionary, and attack-label documentation |
 | `Data/` | Downloaded datasets, generated caches, and local samples; large raw files are not committed |
-| `phase2/` | Model tuning, nonlinear-model, cross-dataset, and deployment work |
+| `baseline/` | Logistic Regression baseline notebook and generated baseline metrics |
+| `advanced-modeling/` | Model tuning, nonlinear-model, cross-dataset, and deployment work |
 
 Start Jupyter from the repository root so the notebooks under `EDA/` continue to resolve their shared `Data/` paths correctly.
 
-## Phase 2 (TODO)
+## Advanced modeling
 
-Model tuning, ensemble and neural-network experiments, comparison outputs
+Model tuning, ensemble and neural-network experiments, cross-dataset evaluation, and deployment design are maintained under [`advanced-modeling/`](advanced-modeling/).

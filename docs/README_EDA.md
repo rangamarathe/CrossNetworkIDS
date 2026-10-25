@@ -455,8 +455,8 @@ The EDA and baseline notebooks should be run in this order:
 1. `EDA/01_eda.ipynb` — complete the core, grading-aligned EDA and initial 2018 inventory.
 2. `EDA/01_eda_advanced_questions.ipynb` — investigate label ambiguity, separability, redundancy, shortcuts, leakage, and cross-year drift.
 3. `EDA/01_eda_2018_extended.ipynb` — perform the detailed CSE-CIC-IDS2018 audit and EDA.
-4. `02_logistic_regression_baseline.ipynb` — establish an interpretable minimum benchmark and cross-year check.
-5. `02_logistic_regression_tuning.ipynb` — test whether leakage-safe regularization and weighting choices improve the baseline.
+4. `baseline/02_logistic_regression_baseline.ipynb` — establish an interpretable minimum benchmark and cross-year check.
+5. `advanced-modeling/02_logistic_regression_tuning.ipynb` — test whether leakage-safe regularization and weighting choices improve the baseline.
 
 ## Reproduction
 
