@@ -70,7 +70,7 @@ Standalone CSE-CIC-IDS2018 analysis containing:
 - PCA; and
 - programmatically generated findings.
 
-For a step-by-step explanation of the EDA, see [`docs/analysis/README_EDA.md`](docs/analysis/README_EDA.md).
+For the evidence-based conclusions, see [`docs/analysis/EDA_FINDINGS.md`](docs/analysis/EDA_FINDINGS.md). For a step-by-step explanation of the methodology, see [`docs/analysis/README_EDA.md`](docs/analysis/README_EDA.md).
 
 ## Key EDA findings
 
@@ -135,21 +135,24 @@ Required packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, a
 | `baseline/results/02_logistic_baseline_per_class.csv` | Untuned per-class metrics |
 | `baseline/results/02_logistic_cross_year_detection.csv` | Baseline cross-year alarm and detection rates |
 
-Supporting documentation includes the [`project business goal`](docs/business/PROJECT_BUSINESS_GOAL.md), [`data dictionary`](docs/analysis/DATA_DICTIONARY.md), and [`attack-label reference`](docs/analysis/ATTACK_LABELS.md).
+Supporting documentation includes the [`EDA findings`](docs/analysis/EDA_FINDINGS.md), [`model data-usage inventory`](docs/modeling/DATA_USAGE_BY_MODEL.md), [`model tuning strategy`](docs/modeling/MODEL_TUNING_STRATEGY.md), [`project business goal`](docs/business/PROJECT_BUSINESS_GOAL.md), [`data dictionary`](docs/analysis/DATA_DICTIONARY.md), and [`attack-label reference`](docs/analysis/ATTACK_LABELS.md).
 
 ## Repository structure
 
 | Directory | Contents |
 |---|---|
 | `EDA/` | Core, advanced-question, and extended 2018 EDA notebooks |
-| `docs/analysis/` | EDA guide, data dictionary, and attack-label documentation |
+| `docs/analysis/` | EDA findings, methodology guide, data dictionary, and attack-label documentation |
 | `docs/business/` | Business goals, research objectives, metrics, and success criteria |
+| `docs/modeling/` | Model rationale, advanced-modeling guide, and robustness-validation findings |
+| `docs/architecture/` | Deployment, scalability, technology-stack, and MLOps/AIOps design |
+| `docs/reports/` | Whitepaper, historical project README, slide decks, and report artifacts |
 | `Data/` | Downloaded datasets, generated caches, and local samples; large raw files are not committed |
 | `baseline/` | Logistic Regression baseline notebook and generated baseline metrics |
-| `advanced-modeling/` | Model tuning, nonlinear-model, cross-dataset, and deployment work |
+| `advanced-modeling/` | Model tuning, nonlinear-model, and cross-dataset notebooks and results |
 
 Start Jupyter from the repository root so the notebooks under `EDA/` continue to resolve their shared `Data/` paths correctly.
 
 ## Advanced modeling
 
-Model tuning, ensemble and neural-network experiments, cross-dataset evaluation, and deployment design are maintained under [`advanced-modeling/`](advanced-modeling/).
+Model tuning, ensemble and neural-network experiments, and cross-dataset evaluation are maintained under [`advanced-modeling/`](advanced-modeling/). Their documentation is organized in [`docs/modeling/ADVANCED_MODELING.md`](docs/modeling/ADVANCED_MODELING.md), with deployment design under [`docs/architecture/`](docs/architecture/) and the consolidated whitepaper under [`docs/reports/WHITEPAPER.md`](docs/reports/WHITEPAPER.md).
