@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document explains the core analysis in [`EDA/01_eda.ipynb`](../EDA/01_eda.ipynb), the hypothesis-driven Q1–Q6 analysis in [`EDA/01_eda_advanced_questions.ipynb`](../EDA/01_eda_advanced_questions.ipynb), and the detailed 2018 analysis in [`EDA/01_eda_2018_extended.ipynb`](../EDA/01_eda_2018_extended.ipynb), including why each step is performed and how it supports the network-intrusion-detection business case.
+This document explains the core analysis in [`EDA/01_eda.ipynb`](../../EDA/01_eda.ipynb), the hypothesis-driven Q1–Q6 analysis in [`EDA/01_eda_advanced_questions.ipynb`](../../EDA/01_eda_advanced_questions.ipynb), and the detailed 2018 analysis in [`EDA/01_eda_2018_extended.ipynb`](../../EDA/01_eda_2018_extended.ipynb), including why each step is performed and how it supports the network-intrusion-detection business case.
 
 The project asks:
 

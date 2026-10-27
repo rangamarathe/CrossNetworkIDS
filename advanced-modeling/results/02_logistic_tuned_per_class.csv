@@ -1,0 +1,33 @@
+split,model,class,precision,recall,f1,support
+time-ordered,Logistic Regression tuned,BENIGN,0.9985445232438939,0.9944632217150423,0.9964996936140794,286990
+time-ordered,Logistic Regression tuned,Botnet,0.8690476190476191,0.9864864864864865,0.9240506329113924,148
+time-ordered,Logistic Regression tuned,DDoS,0.9981617647058824,0.9987387671448841,0.9984501825632405,19029
+time-ordered,Logistic Regression tuned,DoS GoldenEye,0.9770942408376964,0.9861294583883752,0.9815910585141354,1514
+time-ordered,Logistic Regression tuned,DoS Hulk,0.9990538963701158,0.9995267243011295,0.9992902544043657,31694
+time-ordered,Logistic Regression tuned,DoS Slowhttptest,0.4250559284116331,0.5459770114942529,0.4779874213836478,348
+time-ordered,Logistic Regression tuned,DoS Slowloris,0.9287128712871288,0.6075129533678757,0.7345340642129993,772
+time-ordered,Logistic Regression tuned,FTP-Patator,1.0,0.9874213836477987,0.9936708860759493,795
+time-ordered,Logistic Regression tuned,Heartbleed,1.0,0.6666666666666666,0.8,3
+time-ordered,Logistic Regression tuned,Infiltration,0.875,0.875,0.875,8
+time-ordered,Logistic Regression tuned,Infiltration - Portscan,0.8930035709562227,0.8198154443904808,0.8548458568082548,8236
+time-ordered,Logistic Regression tuned,Portscan,0.8782842356687898,0.9738468329287133,0.923600209314495,18124
+time-ordered,Logistic Regression tuned,SSH-Patator,0.9796610169491525,0.9747048903878583,0.9771766694843618,593
+time-ordered,Logistic Regression tuned,Web Attack - Brute Force,0.75,1.0,0.8571428571428571,15
+time-ordered,Logistic Regression tuned,Web Attack - SQL Injection,0.0,0.0,0.0,3
+time-ordered,Logistic Regression tuned,Web Attack - XSS,0.0,0.0,0.0,4
+random,Logistic Regression tuned,BENIGN,0.9996306633077934,0.9996689780131712,0.9996498202933496,286990
+random,Logistic Regression tuned,Botnet,0.9864864864864865,0.9931972789115646,0.9898305084745763,147
+random,Logistic Regression tuned,DDoS,0.9994747071492357,0.9998948972620737,0.9996847580518048,19029
+random,Logistic Regression tuned,DoS GoldenEye,0.991424802110818,0.9933906146728354,0.9924067348960053,1513
+random,Logistic Regression tuned,DoS Hulk,0.9997476101839291,0.9998422414337098,0.9997949235695919,31694
+random,Logistic Regression tuned,DoS Slowhttptest,0.9826589595375722,0.9770114942528736,0.9798270893371758,348
+random,Logistic Regression tuned,DoS Slowloris,0.990990990990991,0.9974093264248705,0.9941897998708844,772
+random,Logistic Regression tuned,FTP-Patator,1.0,1.0,1.0,794
+random,Logistic Regression tuned,Heartbleed,1.0,0.5,0.6666666666666666,2
+random,Logistic Regression tuned,Infiltration,0.5714285714285714,0.5714285714285714,0.5714285714285714,7
+random,Logistic Regression tuned,Infiltration - Portscan,0.9578412318732247,0.7779261777561923,0.8585594639865997,8236
+random,Logistic Regression tuned,Portscan,0.9087299567319929,0.9849922754358861,0.9453255315205592,18124
+random,Logistic Regression tuned,SSH-Patator,0.9966216216216216,0.9966216216216216,0.9966216216216216,592
+random,Logistic Regression tuned,Web Attack - Brute Force,0.7894736842105263,1.0,0.8823529411764706,15
+random,Logistic Regression tuned,Web Attack - SQL Injection,0.0,0.0,0.0,3
+random,Logistic Regression tuned,Web Attack - XSS,1.0,0.25,0.4,4

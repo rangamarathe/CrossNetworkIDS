@@ -1,0 +1,12 @@
+,2017 time-test,2018 sample
+BENIGN false-alarm rate,0.00544803720201126,0.03264
+Attempted alarm rate,0.8365304420350292,0.8890472535906151
+SSH-Patator detection rate,0.9797639123102867,0.34705
+DoS Hulk detection rate,0.9993374140215814,0.02245
+DoS GoldenEye detection rate,0.9603698811096433,0.5838
+DoS Slowloris detection rate,0.9831606217616581,0.9975265017667845
+DDoS detection rate,1.0,0.99995
+Botnet detection rate,0.0,0.0001
+Infiltration - Portscan detection rate,0.9804516755706654,0.8362
+Web Attack - Brute Force detection rate,0.0,0.0
+Infiltration detection rate,0.25,0.004901960784313725
