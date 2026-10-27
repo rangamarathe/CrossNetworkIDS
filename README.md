@@ -131,9 +131,9 @@ Required packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, a
 
 | File | Purpose |
 |---|---|
-| `baseline/02_logistic_baseline_summary.csv` | Untuned baseline summary |
-| `baseline/02_logistic_baseline_per_class.csv` | Untuned per-class metrics |
-| `baseline/02_logistic_cross_year_detection.csv` | Baseline cross-year alarm and detection rates |
+| `baseline/results/02_logistic_baseline_summary.csv` | Untuned baseline summary |
+| `baseline/results/02_logistic_baseline_per_class.csv` | Untuned per-class metrics |
+| `baseline/results/02_logistic_cross_year_detection.csv` | Baseline cross-year alarm and detection rates |
 
 Supporting documentation includes the [`project business goal`](docs/business/PROJECT_BUSINESS_GOAL.md), [`data dictionary`](docs/analysis/DATA_DICTIONARY.md), and [`attack-label reference`](docs/analysis/ATTACK_LABELS.md).
 

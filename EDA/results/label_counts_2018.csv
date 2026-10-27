@@ -1,0 +1,48 @@
+file,Label,flows
+Friday-02-03-2018.csv,BENIGN,6168188
+Friday-02-03-2018.csv,Botnet Ares,142921
+Friday-02-03-2018.csv,Botnet Ares - Attempted,262
+Friday-16-02-2018.csv,BENIGN,5481500
+Friday-16-02-2018.csv,DoS Hulk,1803160
+Friday-16-02-2018.csv,DoS Hulk - Attempted,86
+Friday-16-02-2018.csv,FTP-BruteForce - Attempted,105520
+Friday-23-02-2018.csv,BENIGN,5976251
+Friday-23-02-2018.csv,Web Attack - Brute Force,62
+Friday-23-02-2018.csv,Web Attack - Brute Force - Attempted,61
+Friday-23-02-2018.csv,Web Attack - SQL,23
+Friday-23-02-2018.csv,Web Attack - SQL - Attempted,10
+Friday-23-02-2018.csv,Web Attack - XSS,73
+Friday-23-02-2018.csv,Web Attack - XSS - Attempted,1
+Thursday-01-03-2018.csv,BENIGN,6511554
+Thursday-01-03-2018.csv,Infiltration - Communication Victim Attacker,161
+Thursday-01-03-2018.csv,Infiltration - Dropbox Download,39
+Thursday-01-03-2018.csv,Infiltration - Dropbox Download - Attempted,13
+Thursday-01-03-2018.csv,Infiltration - NMAP Portscan,39634
+Thursday-15-02-2018.csv,BENIGN,5372471
+Thursday-15-02-2018.csv,DoS GoldenEye,22560
+Thursday-15-02-2018.csv,DoS GoldenEye - Attempted,4301
+Thursday-15-02-2018.csv,DoS Slowloris,8490
+Thursday-15-02-2018.csv,DoS Slowloris - Attempted,2280
+Thursday-22-02-2018.csv,BENIGN,6070945
+Thursday-22-02-2018.csv,Web Attack - Brute Force,69
+Thursday-22-02-2018.csv,Web Attack - Brute Force - Attempted,76
+Thursday-22-02-2018.csv,Web Attack - SQL,16
+Thursday-22-02-2018.csv,Web Attack - SQL - Attempted,4
+Thursday-22-02-2018.csv,Web Attack - XSS,40
+Thursday-22-02-2018.csv,Web Attack - XSS - Attempted,3
+Tuesday-20-02-2018.csv,BENIGN,5764497
+Tuesday-20-02-2018.csv,DDoS-LOIC-HTTP,289328
+Tuesday-20-02-2018.csv,DDoS-LOIC-UDP,797
+Tuesday-20-02-2018.csv,DDoS-LOIC-UDP - Attempted,80
+Wednesday-14-02-2018.csv,BENIGN,5610799
+Wednesday-14-02-2018.csv,FTP-BruteForce - Attempted,193354
+Wednesday-14-02-2018.csv,SSH-BruteForce,94197
+Wednesday-21-02-2018.csv,BENIGN,5878399
+Wednesday-21-02-2018.csv,DDoS-HOIC,1082293
+Wednesday-21-02-2018.csv,DDoS-LOIC-UDP,1730
+Wednesday-21-02-2018.csv,DDoS-LOIC-UDP - Attempted,171
+Wednesday-28-02-2018.csv,BENIGN,6518882
+Wednesday-28-02-2018.csv,Infiltration - Communication Victim Attacker,43
+Wednesday-28-02-2018.csv,Infiltration - Dropbox Download,46
+Wednesday-28-02-2018.csv,Infiltration - Dropbox Download - Attempted,15
+Wednesday-28-02-2018.csv,Infiltration - NMAP Portscan,49740

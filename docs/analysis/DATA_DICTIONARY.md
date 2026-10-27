@@ -37,7 +37,7 @@ The project notebooks read these from an `archive (1)/` folder; the same files a
 ### How this was checked (5 Oct 2026)
 
 - All 15 files have a byte-identical header (91 columns, same order).
-- `Label` and `Attempted Category` were counted over **every row of both datasets** (the 2018 counts match `label_counts_2018.csv`).
+- `Label` and `Attempted Category` were counted over **every row of both datasets** (the 2018 counts match `EDA/results/label_counts_2018.csv`).
 - Per-column statistics: **all 2.1M rows of 2017**, and a **deterministic 1% sample of 2018** (631,947 rows, every file, spread across the whole day). 2018 figures below are from that sample unless stated.
 - Exact-equality checks between redundant columns were run on the full 2017 data.
 

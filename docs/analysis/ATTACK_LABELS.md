@@ -2,7 +2,7 @@
 
 Every value of `Label` and `Attempted Category` in both datasets, with exact flow counts, how the two years map onto each other, a technical explanation of each attack (§5), and which attacks are **not** labelled (§6). Column definitions are in [DATA_DICTIONARY.md](DATA_DICTIONARY.md).
 
-All counts below were computed over **every row** of both datasets on 5 Oct 2026 (2,099,976 rows for 2017; 63,195,145 for 2018). The 2018 counts match `label_counts_2018.csv` from notebook 01.
+All counts below were computed over **every row** of both datasets on 5 Oct 2026 (2,099,976 rows for 2017; 63,195,145 for 2018). The 2018 counts match `EDA/results/label_counts_2018.csv` from notebook 01.
 
 ## 1. How labelling works in the improved datasets
 
@@ -96,7 +96,7 @@ Ten weekdays, 14 Feb to 2 Mar 2018, on AWS. Victims are in `172.31.0.0/16`. In t
 
 Totals: attacks 3,535,422 (5.59%), attempted 306,237 (0.48%).
 
-Per-file counts for 2018 are in `label_counts_2018.csv`.
+Per-file counts for 2018 are in `EDA/results/label_counts_2018.csv`.
 
 ## 4. Mapping between 2017 and 2018 labels
 
