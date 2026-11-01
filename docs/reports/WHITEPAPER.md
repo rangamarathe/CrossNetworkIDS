@@ -18,6 +18,8 @@ A Logistic Regression model provides the interpretable baseline. Tree ensembles,
 
 The principal result comes from the binary cross-dataset experiments. Models trained on a single year performed extremely well on their source environment but degraded on the other year. A 2017-only model achieved 0.9900 macro F1 on the 2017 test set but only 0.6936 on 2018. A 2018-only model achieved 0.9851 on 2018 but 0.7945 on 2017. Mixed-year training produced much more stable results: approximately 0.962–0.967 macro F1 on both test environments. Equal-budget and expanded mixed training performed almost identically, suggesting that environmental diversity contributed more than simply increasing row count.
 
+A controlled feature-ablation experiment tested whether suspected laboratory-context variables were responsible for brittle transfer. Removing 16 port, protocol, TCP-window, and flag-related features reduced macro F1 from 0.9628 to 0.9452 on the 2017 test and from 0.9676 to 0.9432 on the 2018 test, while false-alarm rates increased. The experiment therefore does not support removing those variables from the current mixed-network model. No feature met the experiment's declared high-drift KS threshold, so that ablation produced no change.
+
 These results support a privacy-preserving hybrid deployment. Sensitive packet and flow data should remain at the customer site, with local near-real-time feature extraction and inference. A centralized control plane should govern approved training, validation, monitoring, and signed model distribution. An optional LLM may convert model evidence into analyst-facing explanations, but it should not classify traffic or participate in the blocking path.
 
 ---
@@ -46,8 +48,9 @@ The secondary research question is:
 6. HistGradientBoosting was the strongest preliminary chronological multiclass model.
 7. Fine-tuning did not improve the leading tree models; tuning helped the MLP but did not make it the best model.
 8. A deployable system should combine a diverse global model with local threshold calibration and drift monitoring.
-9. Customer packet payloads and identifying network metadata should remain local by default.
-10. LLMs are best used for grounded explanations and analyst workflow support, not as the numeric-flow classifier.
+9. Removing suspected laboratory-context features did not improve robustness across the two represented environments.
+10. Customer packet payloads and identifying network metadata should remain local by default.
+11. LLMs are best used for grounded explanations and analyst workflow support, not as the numeric-flow classifier.
 
 ---
 
@@ -347,6 +350,19 @@ The single-year models are highly specialized. Their strong source-domain result
 - Equal-budget and expanded mixed results differ by approximately 0.001 macro F1, indicating that diversity—not only data volume—explains most of the improvement.
 
 Mixed training should not be described as proof of unseen-network generalization because both evaluated environments are represented during training. A third independent environment must remain completely excluded from development.
+
+### 8.6 Feature-ablation robustness test
+
+A controlled ablation used the mixed expanded training design while holding the rows, preprocessing, estimator, and classification threshold constant. It compared the complete 83-feature model with variants that removed features selected only from the training data.
+
+| Feature set | Features | 2017 macro F1 | 2018 macro F1 | 2017 false-alarm rate | 2018 false-alarm rate |
+|---|---:|---:|---:|---:|---:|
+| All features | 83 | 0.9628 | 0.9676 | 2.98% | 3.92% |
+| Without laboratory context | 67 | 0.9452 | 0.9432 | 4.62% | 6.62% |
+
+Removing the 16 suspected laboratory-context variables lowered macro F1 on both years and increased false alarms. The complete feature set therefore remains preferred for the current model. This does not prove that the variables are universally transferable; it shows only that removing them did not improve performance across the two represented environments.
+
+The training-only KS analysis marked no feature above the declared high-drift threshold. Consequently, the high-KS ablation retained all 83 features and reproduced the complete-model result. A third-network evaluation remains necessary before making a broader feature-retention decision.
 
 ---
 
@@ -685,6 +701,8 @@ The project demonstrates why network-intrusion models must be evaluated beyond a
 
 The strongest current multiclass model is the original HistGradientBoosting configuration, while Logistic Regression remains valuable as an efficient, interpretable, and edge-deployable binary baseline. Fine-tuning improved the MLP but did not improve the leading ensembles.
 
+The feature-ablation test also showed that removing suspected laboratory-context variables did not improve the mixed model. The reduced model performed worse on both years and generated more false alarms, so the current evidence favors retaining the complete shared feature set while continuing to monitor drift and validate on a third network.
+
 The findings support a hybrid production architecture: keep sensitive data and near-real-time inference at the customer site; centralize only governed training, monitoring, approval, and signed model distribution; calibrate behavior locally; and treat cross-network drift as a continuing operational condition. An LLM can add value by explaining grounded model evidence, but it should remain outside the detection and enforcement path.
 
 The next decisive test is an untouched third environment. Until that test is completed, the correct conclusion is that mixed training improves robustness across two known research environments—not that the model universally generalizes to unseen production networks.
@@ -693,34 +711,32 @@ The next decisive test is an untouched third environment. Until that test is com
 
 ## 17. Reproducibility and project artifacts
 
+### Setup and presentation
+
+- `requirements.txt` — Python dependencies for the complete project
+- `00_download_data.ipynb` — download and prepare data
+- `docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary.pptx` — concise executive-summary presentation
+
 ### Phase 1
 
-- `00_download_data.ipynb` — download and prepare data
 - `EDA/01_eda.ipynb` — core grading-aligned EDA
 - `EDA/01_eda_advanced_questions.ipynb` — advanced Q1–Q6 analysis
 - `EDA/01_eda_2018_extended.ipynb` — extended 2018 analysis
 - `baseline/02_logistic_regression_baseline.ipynb` — required baseline
-- `docs/README_EDA.md` — EDA methodology and rationale
+- `docs/analysis/README_EDA.md` — EDA methodology and rationale
 
 ### Phase 2
 
-- `02_logistic_regression_tuning.ipynb`
-- `02_ensemble_models_cicids2017.ipynb`
-- `03_mlp_experiment.ipynb`
-- `04_histgb_fine_tuning.ipynb`
-- `05_all_model_tuning.ipynb`
-- `06_cross_dataset_experiments.ipynb`
-- `DEPLOYMENT_ARCHITECTURE.md`
+- `advanced-modeling/02_logistic_regression_tuning.ipynb`
+- `advanced-modeling/02_ensemble_models_cicids2017.ipynb`
+- `advanced-modeling/03_mlp_experiment.ipynb`
+- `advanced-modeling/04_histgb_fine_tuning.ipynb`
+- `advanced-modeling/05_all_model_tuning.ipynb`
+- `advanced-modeling/06_cross_dataset_experiments.ipynb`
+- `robustness-validation/07_feature_ablation_robustness.ipynb`
+- `docs/architecture/DEPLOYMENT_ARCHITECTURE.md`
 
 Generated CSV files preserve summary, per-class, tuning, confusion-count, and attack-family results.
-
----
-
-## 18. AI-assisted development disclosure
-
-Generative AI tools were used to assist with code drafting, documentation, and editing. The project author reviewed, tested, and revised the generated material and is responsible for the analysis, methodology, results, and conclusions.
-
-This disclosure should be adjusted if the course or institution requires a particular format, tool name, prompt log, or level of detail.
 
 ---
 
