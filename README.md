@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-For a concise overview of the business problem, evaluation design, cross-network results, and recommended next step, see the [five-slide executive-summary presentation](docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary_5_Slides.pptx).
+For a concise overview of the business problem, evaluation design, cross-network results, and recommended next step, see the [executive-summary presentation](docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary.pptx).
 
 ## Project goal
 
@@ -144,7 +144,7 @@ Run the notebooks from the project root in this order:
 | `baseline/results/02_logistic_baseline_summary.csv` | Untuned baseline summary |
 | `baseline/results/02_logistic_baseline_per_class.csv` | Untuned per-class metrics |
 | `baseline/results/02_logistic_cross_year_detection.csv` | Baseline cross-year alarm and detection rates |
-| [`docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary_5_Slides.pptx`](docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary_5_Slides.pptx) | Concise five-slide executive-summary presentation |
+| [`docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary.pptx`](docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary.pptx) | Concise executive-summary presentation |
 
 Supporting documentation includes the [`EDA findings`](docs/analysis/EDA_FINDINGS.md), [`model data-usage inventory`](docs/modeling/DATA_USAGE_BY_MODEL.md), [`model tuning strategy`](docs/modeling/MODEL_TUNING_STRATEGY.md), [`project business goal`](docs/business/PROJECT_BUSINESS_GOAL.md), [`data dictionary`](docs/analysis/DATA_DICTIONARY.md), and [`attack-label reference`](docs/analysis/ATTACK_LABELS.md).
 
