@@ -1,5 +1,9 @@
 # Cross-Network Intrusion Detection: EDA and Baseline
 
+## Executive summary
+
+For a concise overview of the business problem, evaluation design, cross-network results, and recommended next step, see the [five-slide executive-summary presentation](docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary_5_Slides.pptx).
+
 ## Project goal
 
 This project investigates whether network-flow statistics can identify malicious traffic and whether a detector trained on one research network can generalize to another.
@@ -157,6 +161,7 @@ Supporting documentation includes the [`EDA findings`](docs/analysis/EDA_FINDING
 | `Data/` | Downloaded datasets, generated caches, and local samples; large raw files are not committed |
 | `baseline/` | Logistic Regression baseline notebook and generated baseline metrics |
 | `advanced-modeling/` | Model tuning, nonlinear-model, and cross-dataset notebooks and results |
+| `robustness-validation/` | Feature-ablation robustness notebook and generated comparison metrics |
 
 Start Jupyter from the repository root so the notebooks under `EDA/` continue to resolve their shared `Data/` paths correctly.
 

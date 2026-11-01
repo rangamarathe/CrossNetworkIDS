@@ -4,3 +4,6 @@ Data/
 .ipynb_checkpoints/
 __pycache__/
 /advanced-modeling/
+old/
+/.codex-slide-build/
+/old-docs/
