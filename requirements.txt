@@ -1,0 +1,18 @@
+# Notebook runtime
+notebook
+ipykernel
+
+# Data access and analysis
+requests
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine learning
+scikit-learn
+xgboost
+lightgbm
