@@ -117,6 +117,14 @@ Chronological results are emphasized over random-split results because scheduled
 
 ## Reproduction
 
+Install the project dependencies before running the notebooks:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+The complete dependency list is maintained in [`requirements.txt`](requirements.txt), including the notebook runtime, EDA libraries, baseline dependencies, and packages used by the advanced-modeling experiments.
+
 Run the notebooks from the project root in this order:
 
 1. `00_download_data.ipynb` — required data download and setup
@@ -125,8 +133,6 @@ Run the notebooks from the project root in this order:
 4. `EDA/01_eda_2018_extended.ipynb`
 5. `baseline/02_logistic_regression_baseline.ipynb`
 
-Required packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, and `scikit-learn`.
-
 ## Relevant outputs
 
 | File | Purpose |
@@ -134,6 +140,7 @@ Required packages include `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, a
 | `baseline/results/02_logistic_baseline_summary.csv` | Untuned baseline summary |
 | `baseline/results/02_logistic_baseline_per_class.csv` | Untuned per-class metrics |
 | `baseline/results/02_logistic_cross_year_detection.csv` | Baseline cross-year alarm and detection rates |
+| [`docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary_5_Slides.pptx`](docs/reports/Cross_Network_Intrusion_Detection_Executive_Summary_5_Slides.pptx) | Concise five-slide executive-summary presentation |
 
 Supporting documentation includes the [`EDA findings`](docs/analysis/EDA_FINDINGS.md), [`model data-usage inventory`](docs/modeling/DATA_USAGE_BY_MODEL.md), [`model tuning strategy`](docs/modeling/MODEL_TUNING_STRATEGY.md), [`project business goal`](docs/business/PROJECT_BUSINESS_GOAL.md), [`data dictionary`](docs/analysis/DATA_DICTIONARY.md), and [`attack-label reference`](docs/analysis/ATTACK_LABELS.md).
 
